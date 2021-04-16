@@ -55,7 +55,7 @@ router.delete('/:id', validateSession, (req, res) => {
     Cardtype.destroy(query)
     .then((response) => 
     res.status(200).json({
-        message: "Card Type has been deleted",
+        message: "Card Type has been destroyed",
     }))
     .catch((err) => res.status(500).json({error: err}))
 })
